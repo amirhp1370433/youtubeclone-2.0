@@ -6,5 +6,5 @@ export {default as ChannelDetail} from './ChannelDetail'
 export {default as SearchTerm} from './SearchFeed'
 export {default as VideoDetail} from './VideoDetail'  
 export {default as Sidebar} from './Sidebar'  
-
+export {default as Videos} from './Videos'
  
