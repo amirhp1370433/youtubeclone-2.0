@@ -6,6 +6,7 @@ import { demoThumbnailUrl , demoChannelTitle , demoChannelUrl , demoVideoUrl , d
 
 const VideoCard = ({video:{id:{videoId}, snippet}}) => {
   return (
+    // video card container
     <Card sx={{
       width:{
         md: '320px' , xs:'100%' 
@@ -14,6 +15,7 @@ const VideoCard = ({video:{id:{videoId}, snippet}}) => {
       borderRadius:0
       
     }}>
+      {/* video link */}
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl} >
         <CardMedia 
         image={snippet?.thumbnails?.high?.url}
@@ -22,6 +24,7 @@ const VideoCard = ({video:{id:{videoId}, snippet}}) => {
         />
 
       </Link> 
+      {/* card content */}
       <CardContent 
       sx={{
         background:'#1e1e1e' ,
